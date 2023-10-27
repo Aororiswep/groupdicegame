@@ -1,0 +1,76 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('images/backdice.webp');
+    background-repeat: repeat; /* Make the background image repeat */
+    background-size: contain; /* Display the entire image on every device */
+}
+@media (max-width: 768px) {
+    body {
+        background-size: contain;}}
+
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.players {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.player {
+    flex: 1;
+    width: calc(50% - 20px);
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(249, 249, 249, 0.8);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+}
+
+.dice {
+    margin: 20px;
+}
+
+button#rollBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
